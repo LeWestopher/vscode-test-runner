@@ -29,14 +29,14 @@ export interface ITestLocation {
 
 export class TestSuiteProvider implements vscode.TreeDataProvider<TestSuiteFile | TestSuiteAssertionResult> {
 
-	cmd = './node_modules/.bin/jest';
+	public cmd = './node_modules/.bin/jest';
 
 	private _onDidChangeTreeData: vscode.EventEmitter<TestSuiteFile | undefined> 
 		= new vscode.EventEmitter<TestSuiteFile | undefined>();
 
 	readonly onDidChangeTreeData: vscode.Event<TestSuiteFile | undefined> 
 		= this._onDidChangeTreeData.event;
-		
+
 	private _results: any;
 
 	get forRoot() {
