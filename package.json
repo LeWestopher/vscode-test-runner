@@ -1,0 +1,47 @@
+{
+    "name": "jest-test-runner",
+    "displayName": "jest-test-runner",
+    "description": "View to see tests run by Jest in real time.",
+    "version": "0.0.1",
+    "publisher": "wking",
+    "engines": {
+        "vscode": "^1.19.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.sayHello",
+        "onView:jestTestRunner"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.sayHello",
+                "title": "Hello World"
+            }
+        ],
+        "views": {
+            "explorer": [
+				{
+					"id": "jestTestRunner",
+					"name": "Test Runner"
+                }
+            ]
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    }
+}
