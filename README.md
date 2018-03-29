@@ -4,15 +4,15 @@ This repo contains code for a fully visual test runner integrated into the Visua
 
 ## Features
 
-> Visualizations of failing and passing tests, right in your VSCode window
-> (Coming soon!) Jump to test and jump to error functionality
-> (Coming soon!) Support for Karma and PHPUnit as well as other testing engines
-> (Coming soon!) Desktop notifications for failing tests in all test engines
+* Visualizations of failing and passing tests, right in your VSCode window
+* (Coming soon!) Jump to test and jump to error functionality
+* (Coming soon!) Support for Karma and PHPUnit as well as other testing engines
+* (Coming soon!) Desktop notifications for failing tests in all test engines
 
 ## Requirements
 
-> Visual Studio Code
-> Jest
+* Visual Studio Code
+* Jest
 
 ## Extension Settings
 
